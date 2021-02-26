@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./scss/index.scss";
+import { Typography, TextField, Button } from "@material-ui/core";
+import { InputContainer, SortContainer, ToggleContainer } from "./components/index";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+    return (
+        <div className="main-container">
+            <Typography className="main-header">Sort!</Typography>
+            <div className="main-inputs">
+                <InputContainer />
+            </div>
+            <div className="main-toggles">
+                <ToggleContainer />
+            </div>
+            <div className="main-sorts">
+                <SortContainer />
+            </div>
+        </div>
+    );
+};
 
 export default App;
