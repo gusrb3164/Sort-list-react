@@ -1,6 +1,6 @@
 import React from "react";
 
-const SortContainer = () => {
+const SortContainer: React.FC = () => {
     return <div></div>;
 };
 

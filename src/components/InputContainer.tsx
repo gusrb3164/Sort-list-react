@@ -1,21 +1,45 @@
 import React from "react";
-import { TextField, Button } from "@material-ui/core";
+import { TextField, Button, Typography } from "@material-ui/core";
 
-const InputContainer = () => {
+const InputContainer: React.FC = () => {
     return (
-        <div>
-            <TextField
-                className="main-input"
-                type="number"
-                InputLabelProps={{
-                    shrink: true
-                }}
-                variant="outlined"
-            />
-            <Button className="main-button" color="primary" variant="outlined">
-                Sort!
-            </Button>
-        </div>
+        <>
+            <Typography className="input-desc">Input number (max : 16)</Typography>
+            <div className="input-container">
+                <TextField
+                    className="input"
+                    type="number"
+                    InputLabelProps={{
+                        shrink: true
+                    }}
+                    variant="outlined"
+                />
+                <TextField
+                    className="input"
+                    type="number"
+                    InputLabelProps={{
+                        shrink: true
+                    }}
+                    variant="outlined"
+                />
+                <TextField
+                    className="input"
+                    type="number"
+                    InputLabelProps={{
+                        shrink: true
+                    }}
+                    variant="outlined"
+                />
+                <TextField
+                    className="input"
+                    type="number"
+                    InputLabelProps={{
+                        shrink: true
+                    }}
+                    variant="outlined"
+                />
+            </div>
+        </>
     );
 };
 

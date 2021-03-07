@@ -1,7 +1,7 @@
 import React from "react";
 import { ToggleButton, ToggleButtonGroup } from "@material-ui/lab/";
 
-const ToggleContainer = () => {
+const ToggleContainer: React.FC = () => {
     return <div></div>;
 };
 

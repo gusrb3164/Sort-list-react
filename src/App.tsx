@@ -1,6 +1,6 @@
 import React from "react";
 import "./scss/index.scss";
-import { Typography, TextField, Button } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import { InputContainer, SortContainer, ToggleContainer } from "./components/index";
 
 const App: React.FC = () => {
