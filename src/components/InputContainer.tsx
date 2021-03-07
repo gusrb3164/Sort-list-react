@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, Button, Typography } from "@material-ui/core";
+import { TextField, Typography } from "@material-ui/core";
 
 const InputContainer: React.FC = () => {
     return (
